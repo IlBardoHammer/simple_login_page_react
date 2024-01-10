@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    background-color: #5e548e;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.main-section {
+    width: 800px;
+    max-width: 1200px;
+    height: 400px;
+    margin: 200px auto 150px;
+    padding: 20px;
+    font-family: 'Manrope', sans-serif;
+    background-color: #5e548e;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #c8b6ff;
+}
+
+.main-nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.main-nav__list--auth {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-nav__el {
+    list-style: none;
+    padding: 0.2em 0.1em;
+
+}
+.main-nav__el--auth {
+    list-style: none;
+    padding: 0.2em 0.1em;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+
+.main-nav__link {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: navy;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 8px 8px;
+    transition: background-color 0.3s linear;
+}
+
+.main-nav__link:active,
+.main-nav__link:hover {
+    background-color: violet;
+    border-radius: 12px;
+    color: white;
+}
+
+.section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 3em;
+    height: 520px;
+}
+
+
+.section-form__title {
+    color: midnightblue;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    margin-top: 1px;
+    padding: 5px 15px;
+    align-self: center;
+    border-bottom: 2px solid violet;
+}
+
+
+.form--register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    gap: 10px;
+    padding: 30px;
+    background-color: #bbd0ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 10px;
+    transition: margin 0.5s ease;
+}
+
+.form--login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 420px;
+    gap: 10px;
+    padding: 30px;
+    background-color: #bbd0ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 10px;
+    transition: margin 0.5s ease;
+}
+
+.section-form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+[data-lastpass-icon-root] {
+    visibility: hidden !important;
+    display: none !important;
+    pointer-events: none !important;
+    position: absolute !important;
+    right: 0 !important;
+}
+.section-form__label {
+    color: midnightblue;
+    margin: 3px; /* Distanza tra le etichette e gli input */
+    font-weight: 500;
+    border-bottom: 1px solid violet;
+
+
+}
+
+
+.section-form__input {
+    color: black;
+    padding: 7px; /* Spaziatura interna degli input */
+    border-radius: 40px;
+    outline: none;
+    border: solid 2px navy;
+}
+
+.section-form__input:focus,
+.section-form__input:active {
+    border: 2px solid violet;
+}
+
+.section-form__button {
+    padding: 12px 50px;
+    background-color: navy;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.section-form__button:active,
+.section-form__button:hover {
+    background-color: violet;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa6c6c;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    transition: opacity 0.3s ease, max-height 0.6s ease;
+
+}
+
+.section-submit {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-form__a {
+    font-size: 12px;
+    cursor: pointer;
+    color: navy;
+    border-bottom: solid 2px;
+}
+
+.section-form__a:hover {
+    border-bottom: violet solid 2px;
+}
+
+.welcome-home {
+    background-color: violet;
+    padding: 15px;
+    text-align: center;
+    border-radius: 18px;
+    color: white;
+}
